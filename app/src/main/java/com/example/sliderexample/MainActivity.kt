@@ -39,7 +39,8 @@ fun SliderSample(modifier: Modifier = Modifier) {
         var sliderPosition by remember { mutableFloatStateOf(0f) }
         Slider(
             value = sliderPosition,
-            onValueChange = { sliderPosition = it }
+            onValueChange = { sliderPosition = it },
+
         )
         Text(text = "Slider position: $sliderPosition")
     }
