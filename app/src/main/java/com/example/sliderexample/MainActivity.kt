@@ -13,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
@@ -40,7 +41,6 @@ fun SliderSample(modifier: Modifier = Modifier) {
         Slider(
             value = sliderPosition,
             onValueChange = { sliderPosition = it },
-
         )
         Text(text = "Slider position: $sliderPosition")
     }
