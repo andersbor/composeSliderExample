@@ -41,9 +41,9 @@ fun SliderSample(modifier: Modifier = Modifier) {
         var sliderPosition by remember { mutableFloatStateOf(0f) }
         Slider(
             value = sliderPosition,
-            onValueChange = { sliderPosition = it },
+            onValueChange = {sliderPosition=it},
             valueRange = 0f..100f,
-            steps = 9, // number of inner points
+            //steps = 9, // number of inner points
             colors = SliderDefaults.colors(
                 thumbColor = SliderDefaults.colors().thumbColor.copy(alpha = 0.5f)
             )
